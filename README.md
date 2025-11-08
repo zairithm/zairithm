@@ -1,29 +1,42 @@
-👋 Hey, I’m Zaid
+# Hey, I'm Zaid
 
-🚀 I build, break, and automate systems to understand how technology really works  from code to cloud to containers to decentralized systems.
-I’m deeply focused on DevOps, Cloud, and Blockchain, and I believe in shipping real tools over perfect ones.
+I build, break, and automate systems to understand how technology really works — from code to cloud to containers.  
+Currently focused on **DevOps**, **Cloud Infrastructure**, and **Blockchain**, with a philosophy of *shipping real tools over perfect ones.*
 
-💡 My philosophy: Learn by doing, improve by iterating, and always keep building.
+---
 
-🧑‍💻 About Me
+### About Me
+- Exploring DevOps, Cloud, and Blockchain to understand systems end to end  
+- Skilled in workflow automation, cloud setup, and containerization  
+- Prefer working prototypes over theoretical perfection  
+- Linux enthusiast who enjoys understanding what’s happening under the hood  
+- Learn by building, breaking, and fixing until things make sense  
 
-🌱 Exploring the intersection of DevOps, Cloud Infrastructure, and Blockchain
+---
 
-⚡ Skilled in automating workflows, setting up cloud systems, and experimenting with decentralized tech
+### Tech Stack
+**Languages:** Python, Bash, JavaScript  
+**DevOps Tools:** Docker, Kubernetes, Jenkins, GitHub Actions  
+**Cloud Platforms:** AWS, GCP (learning)  
+**Monitoring:** Prometheus, Grafana  
 
-🛠️ I’d rather ship a working script today than a perfect project someday
+---
 
-🐧 Linux enthusiast  I like knowing what’s happening under the hood
+### Currently Working On
+- My **DevOps Learning Journey** — from Linux and Git to Cloud, CI/CD, and Observability  
+- Practicing DSA and contributing to open-source projects aligned with DevOps and Cloud
 
-🧩 I learn by building, breaking, and fixing things until they make sense
+---
 
-Outside of tech, you’ll probably find me on the football field, bingeing horror movies, or diving into weird tech rabbit holes.
+### Get in Touch
+- 📧 [Email](mailto:newworldorderr07@gmail.com)
+- 💼 [LinkedIn](https://linkedin.com/in/mo-zaid-6159bb361)
+- 🌐 [GitHub](https://github.com/zairithm)
 
+---
 
+> *“Learn by doing. Improve by iterating. Keep building.”*
 
-
-
-📫 Open to discussions on DevOps, Cloud, and Blockchain.
 If you’re building, learning, or experimenting  let’s connect and collaborate
 <!---
 zairithm/zairithm is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
