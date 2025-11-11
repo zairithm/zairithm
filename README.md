@@ -15,7 +15,7 @@ Currently focused on **DevOps**, **Cloud Infrastructure**, and **Blockchain**, w
 ---
 
 ### Tech Stack
-**Languages:** Python, Bash, JavaScript  
+**Languages:** Python, Bash, JavaScript , GO 
 **DevOps Tools:** Docker, Kubernetes, Jenkins, GitHub Actions  
 **Cloud Platforms:** AWS, GCP (learning)  
 **Monitoring:** Prometheus, Grafana  
