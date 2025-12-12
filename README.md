@@ -1,30 +1,70 @@
-# Hey, I'm Zaid
+# 👋 Hey, I’m Zaid (Zairithm)
 
-I build, break, and automate systems to understand how technology really works — from code to cloud to containers.  
-Currently focused on **DevOps**, **Cloud Infrastructure**, and **Blockchain**, with a philosophy of *shipping real tools over perfect ones.*
+**Go Lang Developer | DevOps & Cloud Engineer | Web3 & Blockchain Enthusiast | Open Source Contributor | GSoC 2026 Aspirant**
 
----
-
-### About Me
-- Exploring DevOps, Cloud, and Blockchain to understand systems end to end  
-- Skilled in workflow automation, cloud setup, and containerization  
-- Prefer working prototypes over theoretical perfection  
-- Linux enthusiast who enjoys understanding what’s happening under the hood  
-- Learn by building, breaking, and fixing until things make sense  
+I build scalable backend systems, automate cloud infrastructure, and experiment with blockchain-powered applications. Currently preparing for **GSoC 2026**, advancing my DevOps skillset, and contributing to open-source ecosystems.
 
 ---
 
-### Tech Stack
-**Languages:** Python, Bash, JavaScript , GO 
-**DevOps Tools:** Docker, Kubernetes, Jenkins, GitHub Actions  
-**Cloud Platforms:** AWS, GCP (learning)  
-**Monitoring:** Prometheus, Grafana  
+## 🚀 About Me
+
+- 🔭 **Current Focus:**  
+  - Production-grade Go backend development  
+  - DevOps automation with Docker, Kubernetes & GitHub Actions  
+  - Web3 protocols for verifiable credentials  
+  - GSoC 2026 preparation & open-source contributions  
+
+- 🌱 **Learning:**  
+  - Advanced Kubernetes  
+  - Cloud-native architectures (AWS & GCP)  
+  - Solidity + smart contract security basics  
+
+- 👯 **Looking to collaborate on:**  
+  - Open-source DevOps tools  
+  - Distributed systems in Go  
+  - Blockchain infrastructure projects  
 
 ---
 
-### Currently Working On
-- My **DevOps Learning Journey** — from Linux and Git to Cloud, CI/CD, and Observability  
-- Practicing DSA and contributing to open-source projects aligned with DevOps and Cloud
+## 🛠️ Tech Stack
+
+### **Languages**
+Go • Python • Bash • JavaScript • Solidity (Beginner)
+
+### **DevOps & Cloud**
+Docker • Kubernetes • Jenkins • GitHub Actions  
+AWS (EC2, S3, Lambda) • GCP (Cloud Run, Compute Engine)
+
+### **Databases**
+PostgreSQL • Redis • MongoDB
+
+### **Monitoring**
+Prometheus • Grafana
+
+### **Blockchain / Web3**
+Ethereum • Smart Contracts • IPFS • Web3.js
+
+---
+
+
+## 📈 Current Goals
+
+- Build a strong Go + DevOps project portfolio  
+- Deploy cloud-native applications (AWS/GCP)  
+- Contribute consistently to open-source repositories  
+- Strengthen Web3 fundamentals & smart contracts  
+- Secure a position in **GSoC 2026**  
+
+---
+
+## 💼 Open Source Contributions
+Actively contributing to Python, DevOps, Go, and blockchain repositories.  
+Tracking my contributions & pull requests publicly in the **GSoC Prep** repo.
+
+---
+
+⭐ *If my work inspires you, consider giving a star to my repositories!*
+
 
 ---
 
