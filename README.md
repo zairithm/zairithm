@@ -29,20 +29,42 @@ I build scalable backend systems, automate cloud infrastructure, and experiment 
 ## 🛠️ Tech Stack
 
 ### **Languages**
-Go • Python • Bash • JavaScript • Solidity (Beginner)
+![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)  ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)  ![Bash](https://img.shields.io/badge/Bash-121011?logo=gnu-bash&logoColor=white)  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)
+
+
+
+
+
 
 ### **DevOps & Cloud**
-Docker • Kubernetes • Jenkins • GitHub Actions  
-AWS (EC2, S3, Lambda) • GCP (Cloud Run, Compute Engine)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)
+![EC2](https://img.shields.io/badge/AWS_EC2-FF9900?logo=amazonec2&logoColor=white)
+![S3](https://img.shields.io/badge/AWS_S3-569A31?logo=amazons3&logoColor=white)
+![Lambda](https://img.shields.io/badge/AWS_Lambda-FC6D26?logo=awslambda&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?logo=googlecloud&logoColor=white)
+![Compute Engine](https://img.shields.io/badge/Compute_Engine-4285F4?logo=googlecloud&logoColor=white)
 
 ### **Databases**
-PostgreSQL • Redis • MongoDB
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+
 
 ### **Monitoring**
-Prometheus • Grafana
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white)
 
 ### **Blockchain / Web3**
-Ethereum • Smart Contracts • IPFS • Web3.js
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?logo=ethereum&logoColor=white)
+![Smart Contracts](https://img.shields.io/badge/Smart_Contracts-363636?logo=solidity&logoColor=white)
+![IPFS](https://img.shields.io/badge/IPFS-65C2CB?logo=ipfs&logoColor=white)
+![Web3.js](https://img.shields.io/badge/Web3.js-F16822?logo=web3dotjs&logoColor=white)
+
 
 ---
 
@@ -67,6 +89,9 @@ Tracking my contributions & pull requests publicly in the **GSoC Prep** repo.
 
 
 ---
+
+
+
 
 ### Get in Touch
 - 📧 [Email](mailto:newworldorderr07@gmail.com)
