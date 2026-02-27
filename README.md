@@ -1,117 +1,95 @@
-# 👋 Hey, I’m Zaid (Zairithm)
+<h1 align="center">Heyy, I 'm Zairithm </h1>
 
-**Go Lang Developer | DevOps & Cloud Engineer | Web3 & Blockchain Enthusiast | Open Source Contributor | GSoC 2026 Aspirant**
+</p>
 
-I build scalable backend systems, automate cloud infrastructure, and experiment with blockchain-powered applications. Currently preparing for **GSoC 2026**, advancing my DevOps skillset, and contributing to open-source ecosystems.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=30&duration=3500&pause=1000&color=00F7FF&center=true&vCenter=true&width=850&lines=AI%2FML+Engineer;Blockchain+Developer;Building+Intelligent+Systems;Building+Decentralized+Futures" />
+</p>
 
 ---
 
 ## 🚀 About Me
 
-- 🔭 **Current Focus:**  
-  - Production-grade Go backend development  
-  - DevOps automation with Docker, Kubernetes & GitHub Actions  
-  - Web3 protocols for verifiable credentials  
-  - GSoC 2026 preparation & open-source contributions  
-
-- 🌱 **Learning:**  
-  - Advanced Kubernetes  
-  - Cloud-native architectures (AWS & GCP)  
-  - Solidity + smart contract security basics  
-
-- 👯 **Looking to collaborate on:**  
-  - Open-source DevOps tools  
-  - Distributed systems in Go  
-  - Blockchain infrastructure projects  
-
----
-
-## 🛠️ Tech Stack
-
-### **Languages**
-![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)  ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)  ![Bash](https://img.shields.io/badge/Bash-121011?logo=gnu-bash&logoColor=white)  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)
-
-### ☁️ **DevOps & Cloud**
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white)
-![EC2](https://img.shields.io/badge/AWS_EC2-FF9900?logo=amazonec2&logoColor=white)
-![S3](https://img.shields.io/badge/AWS_S3-569A31?logo=amazons3&logoColor=white)
-![Lambda](https://img.shields.io/badge/AWS_Lambda-FC6D26?logo=awslambda&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?logo=googlecloud&logoColor=white)
-![Compute Engine](https://img.shields.io/badge/Compute_Engine-4285F4?logo=googlecloud&logoColor=white)
-
-### ☁️ Cloud Platforms
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-
-
-### **🗄️ Databases**
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
-
-
-### **📊 Monitoring**
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white)
-
-### ⚙️ Backend & Architecture
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![gRPC](https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Microservices](https://img.shields.io/badge/Microservices-000000?style=for-the-badge)
-
-
-### **🔗 Blockchain / Web3**
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?logo=ethereum&logoColor=white)
-![Smart Contracts](https://img.shields.io/badge/Smart_Contracts-363636?logo=solidity&logoColor=white)
-![IPFS](https://img.shields.io/badge/IPFS-65C2CB?logo=ipfs&logoColor=white)
-![Web3.js](https://img.shields.io/badge/Web3.js-F16822?logo=web3dotjs&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-F7DF1E?style=for-the-badge)
-![Ethers.js](https://img.shields.io/badge/Ethers.js-2535A0?style=for-the-badge)
-
+- 🔭 Building Machine Learning & Deep Learning systems  
+- 🔗 Developing Smart Contracts & Web3 Applications  
+- 🧠 Exploring AI + Blockchain integrations  
+- 🌍 Open Source Contributor  
 
 ---
 
 
-## 📈 Current Goals
+# 🛠 Tech Stack
 
-- Build a strong Go + DevOps project portfolio  
-- Deploy cloud-native applications (AWS/GCP)  
-- Contribute consistently to open-source repositories  
-- Strengthen Web3 fundamentals & smart contracts  
-- Secure a position in **GSoC 2026**  
+## 🧠 Languages
 
----
-
-## 💼 Open Source Contributions
-Actively contributing to Python, DevOps, Go, and blockchain repositories.  
-Tracking my contributions & pull requests publicly in the **GSoC Prep** repo.
+<p>
+<img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Solidity-0D1117?style=for-the-badge&logo=solidity&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=00F7FF"/>
+</p>
 
 ---
 
-⭐ *If my work inspires you, consider giving a star to my repositories!*
+## 🤖 AI / ML
+
+<p>
+<img src="https://img.shields.io/badge/TensorFlow-0D1117?style=for-the-badge&logo=tensorflow&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/PyTorch-0D1117?style=for-the-badge&logo=pytorch&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Scikit_Learn-0D1117?style=for-the-badge&logo=scikit-learn&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Pandas-0D1117?style=for-the-badge&logo=pandas&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/NumPy-0D1117?style=for-the-badge&logo=numpy&logoColor=00F7FF"/>
+</p>
+
+---
+
+## 🔗 Blockchain / Web3
+
+<p>
+<img src="https://img.shields.io/badge/Ethereum-0D1117?style=for-the-badge&logo=ethereum&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Hardhat-0D1117?style=for-the-badge&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Ethers.js-0D1117?style=for-the-badge&logo=ethers&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/Web3.js-0D1117?style=for-the-badge&logo=web3dotjs&logoColor=00F7FF"/>
+<img src="https://img.shields.io/badge/IPFS-0D1117?style=for-the-badge&logo=ipfs&logoColor=00F7FF"/>
+</p>
+
+---
+
+# 📊 GitHub Analytics
+
+<p align="center">
+  <img height="170" src="https://streak-stats.demolab.com?user=zairithm&background=0D1117&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=9BE9FF&dates=9BE9FF&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zairithm&bg_color=0D1117&color=00F7FF&line=00F7FF&point=FFFFFF&area=true&hide_border=true" />
+</p>
+
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=2500&pause=1000000&color=8A2BE2&center=true&vCenter=true&repeat=false&width=600&lines=2026+Roadmap" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=22&duration=2500&pause=800&color=00F7FF&center=true&vCenter=true&width=900&lines=Launch+AI-powered+Web3+Application;Deploy+Secure+Smart+Contracts;Contribute+to+ML+Open-Source;Build+Globally+Impactful+Tech" />
+</p>
 
 
 ---
 
+# 📫 Connect With Me
 
-
-
-### Get in Touch
-- 📧 [Email](mailto:newworldorderr07@gmail.com)
-- 💼 [LinkedIn](https://linkedin.com/in/mo-zaid-6159bb361)
-- 🌐 [GitHub](https://github.com/zairithm)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mo-zaid-6159bb361)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:newworldorderr07@gmail.com)
 
 ---
 
-> *“Learn by doing. Improve by iterating. Keep building.”*
+> “Build intelligent systems. Build decentralized futures.”
 
-If you’re building, learning, or experimenting  let’s connect and collaborate
+⭐ If you like my work, consider giving a star to my repositories!
+
+
+
+
 <!---
 zairithm/zairithm is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
