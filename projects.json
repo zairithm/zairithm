@@ -1,0 +1,15 @@
+[
+  {"repo": "RAYZO", "emoji": "🩻", "week": 0, "about": "AI chest X-ray diagnosis with a blockchain audit log, so medical reports can’t be quietly changed"},
+  {"repo": "agentmarket", "emoji": "🤝", "week": 0, "demo": "https://agentmarket-theta.vercel.app/", "about": "A marketplace where AI agents hire and pay other AI agents, with escrow, an AI judge and slashing. Built at Future Forge Hackathon 2026"},
+  {"repo": "certchain", "emoji": "🎓", "week": 0, "about": "Degree certificates stored on blockchain, checked with a QR scan, plus an AI check that flags edited certificates"},
+  {"repo": "metadata", "emoji": "📄", "week": 0, "about": "Pulls key details like names, rent and dates out of rental agreements, from Word files or scanned images"},
+  {"repo": "rust-journey", "emoji": "🦀", "week": 1, "about": "My Rust learning log: exercises, notes and mini projects, updated every week"},
+  {"repo": "rust-todo-cli", "emoji": "📝", "week": 3, "about": "A terminal todo app that saves tasks to a JSON file"},
+  {"repo": "folder-cleaner", "emoji": "🧹", "week": 7, "about": "A command-line tool that sorts messy folders by file type"},
+  {"repo": "parallel-word-count", "emoji": "⚡", "week": 8, "about": "Counts words across 1,000 files using every CPU core, with a speed comparison"},
+  {"repo": "tokio-chat", "emoji": "💬", "week": 9, "about": "A chat server where many people can talk at once, built with async Rust"},
+  {"repo": "axum-notes-api", "emoji": "🌐", "week": 10, "about": "A notes API with login and a Postgres database, deployed online"},
+  {"repo": "anchor-escrow", "emoji": "🔐", "week": 12, "about": "A Solana program that holds funds safely until both sides agree, fully tested"},
+  {"repo": "solana-hackathon-2027", "emoji": "🏆", "week": 24, "about": "My team’s Solana hackathon project"},
+  {"repo": "rust-kv-store", "emoji": "🗄️", "week": 30, "about": "My own key-value database, written from scratch in Rust"}
+]

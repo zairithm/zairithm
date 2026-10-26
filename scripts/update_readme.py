@@ -18,6 +18,7 @@ README = ROOT / "README.md"
 BANNER = ROOT / "assets" / "banner.svg"
 CACHE = ROOT / "assets" / "stats.json"
 MILESTONES = ROOT / "milestones.json"
+PROJECTS = ROOT / "projects.json"
 
 USER = os.environ.get("GH_USER", "zairithm")
 LC_USER = os.environ.get("LC_USER", "zairithm")
@@ -103,6 +104,10 @@ def fetch_recent_repos():
     return out
 
 
+def fetch_repo_names():
+    return sorted(r["name"] for r in gh(f"/users/{USER}/repos?per_page=100"))
+
+
 # ---------- helpers ----------
 def week_info(now):
     n = max(1, (now - START).days // 7 + 1)
@@ -167,6 +172,38 @@ def tests_block(lc, prs):
         ["```console", "$ cargo test -p zaid", f"running {len(items)} tests"] + lines +
         ["", f"test result: {passed} passed; {todo} todo; 0 failed", "```"]
     )
+
+
+def projects_block(names, n):
+    if not PROJECTS.exists():
+        return ""
+    have = {x.lower() for x in (names or [])}
+    rows = ["| | Project | What it does | Status |", "|---|---|---|---|"]
+    for p in json.loads(PROJECTS.read_text()):
+        repo, week = p["repo"], p.get("week", 0)
+        if repo.lower() in have:
+            name, status = f"[**{repo}**](https://github.com/{USER}/{repo})", "✅ live"
+            if p.get("demo"):
+                status += f" · [demo]({p['demo']})"
+        elif names is None:
+            name, status = f"**{repo}**", "⏳ syncing"
+        elif not week:
+            name, status = f"**{repo}**", "⏳ code coming soon"
+        elif week and week <= n:
+            name, status = f"**{repo}**", "🔨 building now"
+        elif week > TOTAL_WEEKS:
+            name, status = f"**{repo}**", "🗓️ summer 2027"
+        else:
+            name, status = f"**{repo}**", f"🗓️ planned, week {week}"
+        rows.append(f"| {p.get('emoji', '')} | {name} | {p['about']} | {status} |")
+    return "\n".join(rows)
+
+
+def ensure_projects_markers(text):
+    if "<!--PROJECTS:START-->" in text:
+        return text
+    pat = re.compile(r"(## Things I.ve built\n)(.*?)(\n## Milestones)", re.S)
+    return pat.sub(lambda m: m.group(1) + "\n<!--PROJECTS:START-->\n<!--PROJECTS:END-->\n" + m.group(3), text, count=1)
 
 
 def recent_block(repos, prs, now):
@@ -234,7 +271,8 @@ def main():
     now = datetime.now(IST)
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
 
-    for key, fn in (("leetcode", fetch_leetcode), ("prs", fetch_merged_prs), ("repos", fetch_recent_repos)):
+    for key, fn in (("leetcode", fetch_leetcode), ("prs", fetch_merged_prs),
+                    ("repos", fetch_recent_repos), ("repo_names", fetch_repo_names)):
         try:
             cache[key] = fn()
         except Exception as err:  # keep the last good value if an API is down
@@ -244,7 +282,9 @@ def main():
     n, phase, title, label = week_info(now)
 
     old = README.read_text()
-    new = put(old, "BUILD", build_block(n, phase, title, lc, prs))
+    new = ensure_projects_markers(old)
+    new = put(new, "PROJECTS", projects_block(cache.get("repo_names"), n))
+    new = put(new, "BUILD", build_block(n, phase, title, lc, prs))
     new = put(new, "TESTS", tests_block(lc, prs))
     new = put(new, "RECENT", recent_block(repos, prs, now))
     first_run = "<!--UPDATED:START-->\n<!--UPDATED:END-->" in old
