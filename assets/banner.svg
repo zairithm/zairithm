@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300" role="img" aria-label="warning: this developer is still compiling. Mo Zaid, week 1 of 29, now learning setup and first rust programs. leetcode syncing, 0 PRs merged upstream.">
+  <style>
+    .t{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace;font-size:16px;fill:#D9DEE0}
+    .w{fill:#F0955F;font-weight:700} .b{fill:#7FA7C9} .h{fill:#7FCABF;font-weight:700}
+    .k{fill:#C792EA} .ty{fill:#7FCABF} .c{fill:#F0955F} .m{fill:#8A969D}
+    .l{opacity:0;animation:in .35s ease forwards} .l1{animation-delay:0.1s}.l2{animation-delay:0.4s}.l3{animation-delay:0.6s}.l4{animation-delay:0.9s}.l5{animation-delay:1.4s}.l6{animation-delay:1.6s}.l7{animation-delay:1.9s}.l8{animation-delay:2.2s}.l9{animation-delay:2.6s}
+    .cur{animation:blink 1s steps(1) infinite 3s}
+    @keyframes in{to{opacity:1}} @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion: reduce){.l{animation:none;opacity:1} .cur{animation:none}}
+  </style>
+  <rect width="820" height="300" rx="10" fill="#14191C" stroke="#323C42"/>
+  <circle cx="24" cy="20" r="5" fill="#E5814C"/><circle cx="42" cy="20" r="5" fill="#C9A227"/><circle cx="60" cy="20" r="5" fill="#2A665F"/>
+  <text class="t m" x="790" y="25" text-anchor="end" style="font-size:12px">zairithm — rustc</text>
+  <text xml:space="preserve" class="t l l1" x="28" y="64"><tspan class="w">warning</tspan>: this developer is still compiling</text>
+  <text xml:space="preserve" class="t l l2" x="28" y="90"><tspan class="b">  --&gt;</tspan> zairithm/journey.rs:1:1</text>
+  <text xml:space="preserve" class="t l l3" x="28" y="116"><tspan class="b">   |</tspan></text>
+  <text xml:space="preserve" class="t l l4" x="28" y="142"><tspan class="b"> 1 |</tspan> <tspan class="k">let</tspan> zaid = <tspan class="ty">Builder</tspan>::new().ai().blockchain().rust();</text>
+  <text xml:space="preserve" class="t l l5" x="28" y="168"><tspan class="b">   |</tspan>                                            <tspan class="c">^^^^^^ week 1 of 29</tspan></text>
+  <text xml:space="preserve" class="t l l6" x="28" y="194"><tspan class="b">   |</tspan></text>
+  <text xml:space="preserve" class="t l l7" x="28" y="220"><tspan class="b">   =</tspan> <tspan class="h">help</tspan>: now learning setup and first rust programs</text>
+  <text xml:space="preserve" class="t l l8" x="28" y="246"><tspan class="b">   =</tspan> <tspan class="h">note</tspan>: leetcode syncing, 0 PRs merged upstream</text>
+  <text xml:space="preserve" class="t l l9" x="28" y="272"><tspan class="m">zaid@rust:~$</tspan> <tspan class="cur">█</tspan></text>
+</svg>
