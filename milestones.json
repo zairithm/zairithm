@@ -1,0 +1,20 @@
+[
+  {"test": "rust::first_program",            "done": false},
+  {"test": "rust::finished_rust_book",       "done": false},
+  {"test": "rust::shipped_cli_tool",         "done": false},
+  {"test": "rust::deployed_axum_api",        "done": false},
+  {"test": "rust::solana_program_on_devnet", "done": false},
+  {"test": "rust::advanced_project",         "done": false},
+  {"test": "dsa::solved_50",                 "auto": {"leetcode": 50}},
+  {"test": "dsa::solved_100",                "auto": {"leetcode": 100}},
+  {"test": "dsa::solved_200",                "auto": {"leetcode": 200}},
+  {"test": "dsa::first_contest",             "done": false},
+  {"test": "open_source::first_merged_pr",   "auto": {"merged_prs": 1}},
+  {"test": "open_source::three_merged_prs",  "auto": {"merged_prs": 3}},
+  {"test": "gsoc::proposal_submitted",       "done": false},
+  {"test": "gsoc::selected_2027",            "done": false},
+  {"test": "hackathon::first_rust_submission","done": false},
+  {"test": "hackathon::podium_finish",       "done": false},
+  {"test": "career::rust_internship",        "done": false},
+  {"test": "career::job_offer",              "done": false}
+]
