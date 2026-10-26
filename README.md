@@ -10,21 +10,29 @@ $ cargo build --release -p zaid
    Compiling rust    v0.1.0   rust book, rustlings, tokio, axum, solana + anchor
    Compiling dsa     v0.0.0   c++, leetcode
     Building [>                           ] 1/29  foundations: setup and first rust programs
-    Finished leetcode syncing, 0 PRs merged upstream
+    Finished leetcode 0 solved (0 easy, 0 medium, 0 hard), 0 PRs merged upstream
 ```
 <!--BUILD:END-->
 
 ## Things I’ve built
 
-| | Project | What it does |
-|---|---|---|
-| 🩻 | [**RAYZO**](https://github.com/zairithm/RAYZO) | AI chest X-ray diagnosis with a blockchain audit log, so medical reports can’t be quietly changed |
-| 🦀 | [**rust-journey**](https://github.com/zairithm/rust-journey) | My Rust learning log: exercises, notes and mini projects, updated every week |
-<!-- Add more rows when the repos are public, for example:
-| 🤝 | [**AgentMarket**](link) | Marketplace for AI agents with escrow, an AI judge and slashing. Built at Future Forge Hackathon |
-| 🎓 | [**CertChain**](link) | Degree-certificate verification on blockchain with QR check and AI forgery detection |
-| 📄 | [**Rental Extractor**](link) | Pulls key fields out of rental agreements from Word files and scans |
--->
+<!--PROJECTS:START-->
+| | Project | What it does | Status |
+|---|---|---|---|
+| 🩻 | **RAYZO** | AI chest X-ray diagnosis with a blockchain audit log, so medical reports can’t be quietly changed | ⏳ code coming soon |
+| 🤝 | **agentmarket** | A marketplace where AI agents hire and pay other AI agents, with escrow, an AI judge and slashing. Built at Future Forge Hackathon 2026 | ⏳ code coming soon |
+| 🎓 | **certchain** | Degree certificates stored on blockchain, checked with a QR scan, plus an AI check that flags edited certificates | ⏳ code coming soon |
+| 📄 | **metadata** | Pulls key details like names, rent and dates out of rental agreements, from Word files or scanned images | ⏳ code coming soon |
+| 🦀 | **rust-journey** | My Rust learning log: exercises, notes and mini projects, updated every week | 🔨 building now |
+| 📝 | **rust-todo-cli** | A terminal todo app that saves tasks to a JSON file | 🗓️ planned, week 3 |
+| 🧹 | **folder-cleaner** | A command-line tool that sorts messy folders by file type | 🗓️ planned, week 7 |
+| ⚡ | **parallel-word-count** | Counts words across 1,000 files using every CPU core, with a speed comparison | 🗓️ planned, week 8 |
+| 💬 | **tokio-chat** | A chat server where many people can talk at once, built with async Rust | 🗓️ planned, week 9 |
+| 🌐 | **axum-notes-api** | A notes API with login and a Postgres database, deployed online | 🗓️ planned, week 10 |
+| 🔐 | **anchor-escrow** | A Solana program that holds funds safely until both sides agree, fully tested | 🗓️ planned, week 12 |
+| 🏆 | **solana-hackathon-2027** | My team’s Solana hackathon project | 🗓️ planned, week 24 |
+| 🗄️ | **rust-kv-store** | My own key-value database, written from scratch in Rust | 🗓️ summer 2027 |
+<!--PROJECTS:END-->
 
 ## Milestones
 
