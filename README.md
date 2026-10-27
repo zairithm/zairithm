@@ -68,7 +68,7 @@ test result: 0 passed; 18 todo; 0 failed
 ## Recently worked on
 
 <!--RECENT:START-->
-_Nothing public yet. First Rust commits are on the way._
+- [**ballondor-short**](https://github.com/zairithm/ballondor-short) · pushed today
 <!--RECENT:END-->
 
 ## Find me
@@ -76,5 +76,5 @@ _Nothing public yet. First Rust commits are on the way._
 [LinkedIn](https://linkedin.com/in/mo-zaid-6159bb361) · [LeetCode](https://leetcode.com/u/zairithm) · [Kaggle](https://www.kaggle.com/zairithm13) · [Email](mailto:newworldorderr07@gmail.com)
 
 <!--UPDATED:START-->
-<sub>This profile updates itself every morning. Last change: 26 Oct 2026.</sub>
+<sub>This profile updates itself every morning. Last change: 27 Oct 2026.</sub>
 <!--UPDATED:END-->
