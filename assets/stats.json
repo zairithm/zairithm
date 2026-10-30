@@ -11,6 +11,13 @@
   },
   "repos": [
     {
+      "name": "HARRY-KANE",
+      "url": "https://github.com/zairithm/HARRY-KANE",
+      "lang": "",
+      "desc": "",
+      "pushed": "2026-10-29T17:31:15Z"
+    },
+    {
       "name": "ballondor-short",
       "url": "https://github.com/zairithm/ballondor-short",
       "lang": "",
@@ -19,6 +26,7 @@
     }
   ],
   "repo_names": [
+    "HARRY-KANE",
     "ballondor-short",
     "zairithm"
   ]
