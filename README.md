@@ -68,8 +68,7 @@ test result: 0 passed; 18 todo; 0 failed
 ## Recently worked on
 
 <!--RECENT:START-->
-- [**HARRY-KANE**](https://github.com/zairithm/HARRY-KANE) · pushed yesterday
-- [**ballondor-short**](https://github.com/zairithm/ballondor-short) · pushed 4 days ago
+_Nothing public yet. First Rust commits are on the way._
 <!--RECENT:END-->
 
 ## Find me
@@ -77,5 +76,5 @@ test result: 0 passed; 18 todo; 0 failed
 [LinkedIn](https://linkedin.com/in/mo-zaid-6159bb361) · [LeetCode](https://leetcode.com/u/zairithm) · [Kaggle](https://www.kaggle.com/zairithm13) · [Email](mailto:newworldorderr07@gmail.com)
 
 <!--UPDATED:START-->
-<sub>This profile updates itself every morning. Last change: 31 Oct 2026.</sub>
+<sub>This profile updates itself every morning. Last change: 01 Nov 2026.</sub>
 <!--UPDATED:END-->
