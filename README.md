@@ -7,9 +7,9 @@
 $ cargo build --release -p zaid
    Compiling ai-ml   v1.0.0   python, pytorch, tensorflow, scikit-learn, pandas
    Compiling web3    v1.0.0   solidity, hardhat, ethers.js, ipfs
-   Compiling rust    v0.1.0   rust book, rustlings, tokio, axum, solana + anchor
+   Compiling rust    v0.2.0   rust book, rustlings, tokio, axum, solana + anchor
    Compiling dsa     v0.0.0   c++, leetcode
-    Building [>                           ] 1/29  foundations: setup and first rust programs
+    Building [=>                          ] 2/29  foundations: ownership and borrowing
     Finished leetcode 0 solved (0 easy, 0 medium, 0 hard), 0 PRs merged upstream
 ```
 <!--BUILD:END-->
@@ -76,5 +76,5 @@ _Nothing public yet. First Rust commits are on the way._
 [LinkedIn](https://linkedin.com/in/mo-zaid-6159bb361) · [LeetCode](https://leetcode.com/u/zairithm) · [Kaggle](https://www.kaggle.com/zairithm13) · [Email](mailto:newworldorderr07@gmail.com)
 
 <!--UPDATED:START-->
-<sub>This profile updates itself every morning. Last change: 01 Nov 2026.</sub>
+<sub>This profile updates itself every morning. Last change: 02 Nov 2026.</sub>
 <!--UPDATED:END-->
