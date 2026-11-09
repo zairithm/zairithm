@@ -135,23 +135,33 @@ def strip_block(text, key):
 
 
 # ---------- sections ----------
+def stats_bits(lc, prs):
+    """Only real numbers. A zero is left out instead of shown on the profile."""
+    bits = []
+    if lc and lc.get("total"):
+        bits.append(f"{lc['total']} leetcode solved")
+    if prs and prs.get("count"):
+        bits.append(f"{prs['count']} PR{'s' if prs['count'] != 1 else ''} merged upstream")
+    return bits
+
+
 def build_block(n, phase, title, lc, prs):
-    filled = round(min(n, TOTAL_WEEKS) / TOTAL_WEEKS * 28)
-    bar = ("=" * max(filled - 1, 0) + ">").ljust(28)
-    lc_line = (f"leetcode {lc['total']} solved ({lc['easy']} easy, {lc['medium']} medium, {lc['hard']} hard)"
-               if lc else "leetcode syncing")
-    step = f"{min(n, TOTAL_WEEKS)}/{TOTAL_WEEKS}"
-    return "\n".join([
-        "```console",
-        "$ cargo build --release -p zaid",
-        "   Compiling ai-ml   v1.0.0   python, pytorch, tensorflow, scikit-learn, pandas",
-        "   Compiling web3    v1.0.0   solidity, hardhat, ethers.js, ipfs",
-        f"   Compiling rust    v0.{min(n, TOTAL_WEEKS)}.0   rust book, rustlings, tokio, axum, solana + anchor",
-        f"   Compiling dsa     v0.{lc['total'] if lc else 0}.0   c++, leetcode",
-        f"    Building [{bar}] {step}  {phase}: {title}",
-        f"    Finished {lc_line}, {prs['count'] if prs else 0} PRs merged upstream",
-        "```",
-    ])
+    lines = ["```console", "$ cargo build --release -p zaid"]
+    if n <= TOTAL_WEEKS:
+        filled = round(n / TOTAL_WEEKS * 28)
+        bar = ("=" * max(filled - 1, 0) + ">").ljust(28)
+        lines.append(f"   Compiling rust v0.{n}.0 (roadmap week {n} of {TOTAL_WEEKS})")
+        lines.append(f"    Building [{bar}] {phase}: {title}")
+        if n < TOTAL_WEEKS:
+            lines.append(f"        Next week {n + 1}: {WEEKS[n]}")
+    else:
+        lines.append(f"   Compiling rust v1.0.0 ({phase})")
+        lines.append(f"    Building {title}")
+    bits = stats_bits(lc, prs)
+    if bits:
+        lines.append(f"    Finished {', '.join(bits)}")
+    lines.append("```")
+    return "\n".join(lines)
 
 
 def tests_block(lc, prs):
@@ -174,29 +184,52 @@ def tests_block(lc, prs):
     )
 
 
+UPCOMING_SHOWN = 3   # planned Rust projects listed by name; the rest are summed up in one line
+
+
+def project_row(p, names, n):
+    repo, week = p["repo"], p.get("week", 0)
+    have = {x.lower() for x in (names or [])}
+    if repo.lower() in have:
+        name, status = f"[**{repo}**](https://github.com/{USER}/{repo})", "✅ live"
+    elif names is None:
+        name, status = f"**{repo}**", "⏳ syncing"
+    elif not week:
+        name, status = f"**{repo}**", "⏳ code coming soon"
+    elif week <= n:
+        name, status = f"**{repo}**", "🔨 building now"
+    elif week > TOTAL_WEEKS:
+        name, status = f"**{repo}**", "🗓️ summer 2027"
+    else:
+        name, status = f"**{repo}**", f"🗓️ week {week}"
+    if p.get("demo"):
+        status += f" · [demo]({p['demo']})"
+    return f"| {p.get('emoji', '')} | {name} | {p['about']} | {status} |"
+
+
 def projects_block(names, n):
     if not PROJECTS.exists():
         return ""
+    items = json.loads(PROJECTS.read_text())
     have = {x.lower() for x in (names or [])}
-    rows = ["| | Project | What it does | Status |", "|---|---|---|---|"]
-    for p in json.loads(PROJECTS.read_text()):
-        repo, week = p["repo"], p.get("week", 0)
-        if repo.lower() in have:
-            name, status = f"[**{repo}**](https://github.com/{USER}/{repo})", "✅ live"
-            if p.get("demo"):
-                status += f" · [demo]({p['demo']})"
-        elif names is None:
-            name, status = f"**{repo}**", "⏳ syncing"
-        elif not week:
-            name, status = f"**{repo}**", "⏳ code coming soon"
-        elif week and week <= n:
-            name, status = f"**{repo}**", "🔨 building now"
-        elif week > TOTAL_WEEKS:
-            name, status = f"**{repo}**", "🗓️ summer 2027"
-        else:
-            name, status = f"**{repo}**", f"🗓️ planned, week {week}"
-        rows.append(f"| {p.get('emoji', '')} | {name} | {p['about']} | {status} |")
-    return "\n".join(rows)
+    head = ["| | Project | What it does | Status |", "|---|---|---|---|"]
+
+    rust = sorted((p for p in items if p.get("week", 0)), key=lambda p: p["week"])
+    earlier = [p for p in items if not p.get("week", 0)]
+
+    # started or live first, then only the next few planned ones
+    shown = [p for p in rust if p["week"] <= n or p["repo"].lower() in have]
+    planned = [p for p in rust if p not in shown]
+    shown += planned[:UPCOMING_SHOWN]
+    rest = planned[UPCOMING_SHOWN:]
+
+    out = ["### 🦀 Rust", ""] + head + [project_row(p, names, n) for p in shown]
+    if rest:
+        later = ", ".join(f"`{p['repo']}`" for p in rest)
+        out += ["", f"<sub>Later on the roadmap: {later}.</sub>"]
+    if earlier:
+        out += ["", "### 🧠 AI/ML and Web3", ""] + head + [project_row(p, names, n) for p in earlier]
+    return "\n".join(out)
 
 
 def ensure_projects_markers(text):
@@ -220,37 +253,49 @@ def recent_block(repos, prs, now):
     if prs and prs["latest"]:
         out.append("\n**Latest merged PRs to other projects**")
         out += [f"- [{p['title']}]({p['url']}) in `{p['repo']}`" for p in prs["latest"]]
-    return "\n".join(out) if out else "_Nothing public yet. First Rust commits are on the way._"
+    return "\n".join(out) if out else "_First public Rust repositories are on the way._"
 
 
 def banner_svg(n, label, title, lc, prs):
     e = html.escape
-    title = title if len(title) <= 46 else title[:45] + "…"
-    lc_txt = f"{lc['total']} leetcode solved" if lc else "leetcode syncing"
-    pr_txt = f"{prs['count'] if prs else 0} PRs merged upstream"
+    title = title if len(title) <= 40 else title[:39] + "…"
+    now_txt = f"{label}: {title}" if n <= TOTAL_WEEKS else title
+    bits = stats_bits(lc, prs)
 
-    def row(i, inner):
-        return f'<text xml:space="preserve" class="t l l{i}" x="28" y="{64 + (i - 1) * 26}">{inner}</text>'
+    def kv(key, value):
+        return f'<tspan class="b">  {key:<10}</tspan> {value}'
 
-    lines = [
-        row(1, '<tspan class="w">warning</tspan>: this developer is still compiling'),
-        row(2, f'<tspan class="b">  --&gt;</tspan> zairithm/journey.rs:{n}:1'),
-        row(3, '<tspan class="b">   |</tspan>'),
-        row(4, '<tspan class="b"> 1 |</tspan> <tspan class="k">let</tspan> zaid = '
-               '<tspan class="ty">Builder</tspan>::new().ai().blockchain().rust();'),
-        row(5, '<tspan class="b">   |</tspan>' + " " * 44 + f'<tspan class="c">^^^^^^ {e(label)}</tspan>'),
-        row(6, '<tspan class="b">   |</tspan>'),
-        row(7, f'<tspan class="b">   =</tspan> <tspan class="h">help</tspan>: now learning {e(title)}'),
-        row(8, f'<tspan class="b">   =</tspan> <tspan class="h">note</tspan>: {e(lc_txt)}, {e(pr_txt)}'),
-        row(9, '<tspan class="m">zaid@rust:~$</tspan> <tspan class="cur">█</tspan>'),
+    sep = ' <tspan class="m">·</tspan> '
+    rows = [
+        ('<tspan class="m">zaid@rust:~$</tspan> cargo run --release', ""),
+        ('<tspan class="h">    Finished</tspan> `release` profile [optimized] target(s)', ""),
+        ('<tspan class="h">     Running</tspan> `target/release/zaid`', ""),
+        ("", ""),
+        ('<tspan class="n">Mo Zaid</tspan>  <tspan class="c">Rust developer</tspan>', " n"),
+        (kv("backend", sep.join(["tokio", "axum"])), ""),
+        (kv("on-chain", sep.join(["solana", "anchor"])), ""),
+        (kv("also", sep.join(["python", "pytorch", "solidity"])), ""),
+        (kv("now", e(now_txt)), ""),
     ]
-    delays = [0.1, 0.4, 0.6, 0.9, 1.4, 1.6, 1.9, 2.2, 2.6]
-    delay_css = "".join(f".l{i + 1}{{animation-delay:{d}s}}" for i, d in enumerate(delays))
-    h = 64 + 8 * 26 + 28
+    if bits:
+        rows.append((kv("stats", sep.join(e(b) for b in bits)), ""))
+    rows.append(('<tspan class="m">zaid@rust:~$</tspan> <tspan class="cur">█</tspan>', ""))
+
+    lines, y = [], 64
+    for i, (inner, extra) in enumerate(rows, 1):
+        y += 8 if extra else 0          # a little air around the name line
+        lines.append(f'<text xml:space="preserve" class="t l l{i}{extra}" x="28" y="{y}">{inner}</text>')
+        y += 26 + (8 if extra else 0)
+    delay_css = "".join(f".l{i}{{animation-delay:{0.1 + (i - 1) * 0.22:.2f}s}}" for i in range(1, len(rows) + 1))
+    h = y + 2
     body = "\n  ".join(lines)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 {h}" width="820" height="{h}" role="img" aria-label="warning: this developer is still compiling. Mo Zaid, {e(label)}, now learning {e(title)}. {e(lc_txt)}, {e(pr_txt)}.">
+    aria = f"Mo Zaid, Rust developer. Backend with Tokio and Axum, on-chain with Solana and Anchor, also Python, PyTorch and Solidity. Now: {e(now_txt)}."
+    if bits:
+        aria += " " + e(", ".join(bits)) + "."
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 {h}" width="820" height="{h}" role="img" aria-label="{aria}">
   <style>
     .t{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace;font-size:16px;fill:#D9DEE0}}
+    .n{{fill:#FFFFFF;font-weight:700;font-size:22px}}
     .w{{fill:#F0955F;font-weight:700}} .b{{fill:#7FA7C9}} .h{{fill:#7FCABF;font-weight:700}}
     .k{{fill:#C792EA}} .ty{{fill:#7FCABF}} .c{{fill:#F0955F}} .m{{fill:#8A969D}}
     .l{{opacity:0;animation:in .35s ease forwards}} {delay_css}

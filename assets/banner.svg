@@ -1,23 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300" role="img" aria-label="warning: this developer is still compiling. Mo Zaid, week 3 of 29, now learning structs, enums and match. 0 leetcode solved, 0 PRs merged upstream.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 342" width="820" height="342" role="img" aria-label="Mo Zaid, Rust developer. Backend with Tokio and Axum, on-chain with Solana and Anchor, also Python, PyTorch and Solidity. Now: week 3 of 29: structs, enums and match.">
   <style>
     .t{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace;font-size:16px;fill:#D9DEE0}
+    .n{fill:#FFFFFF;font-weight:700;font-size:22px}
     .w{fill:#F0955F;font-weight:700} .b{fill:#7FA7C9} .h{fill:#7FCABF;font-weight:700}
     .k{fill:#C792EA} .ty{fill:#7FCABF} .c{fill:#F0955F} .m{fill:#8A969D}
-    .l{opacity:0;animation:in .35s ease forwards} .l1{animation-delay:0.1s}.l2{animation-delay:0.4s}.l3{animation-delay:0.6s}.l4{animation-delay:0.9s}.l5{animation-delay:1.4s}.l6{animation-delay:1.6s}.l7{animation-delay:1.9s}.l8{animation-delay:2.2s}.l9{animation-delay:2.6s}
+    .l{opacity:0;animation:in .35s ease forwards} .l1{animation-delay:0.10s}.l2{animation-delay:0.32s}.l3{animation-delay:0.54s}.l4{animation-delay:0.76s}.l5{animation-delay:0.98s}.l6{animation-delay:1.20s}.l7{animation-delay:1.42s}.l8{animation-delay:1.64s}.l9{animation-delay:1.86s}.l10{animation-delay:2.08s}
     .cur{animation:blink 1s steps(1) infinite 3s}
     @keyframes in{to{opacity:1}} @keyframes blink{50%{opacity:0}}
     @media (prefers-reduced-motion: reduce){.l{animation:none;opacity:1} .cur{animation:none}}
   </style>
-  <rect width="820" height="300" rx="10" fill="#14191C" stroke="#323C42"/>
+  <rect width="820" height="342" rx="10" fill="#14191C" stroke="#323C42"/>
   <circle cx="24" cy="20" r="5" fill="#E5814C"/><circle cx="42" cy="20" r="5" fill="#C9A227"/><circle cx="60" cy="20" r="5" fill="#2A665F"/>
   <text class="t m" x="790" y="25" text-anchor="end" style="font-size:12px">zairithm — rustc</text>
-  <text xml:space="preserve" class="t l l1" x="28" y="64"><tspan class="w">warning</tspan>: this developer is still compiling</text>
-  <text xml:space="preserve" class="t l l2" x="28" y="90"><tspan class="b">  --&gt;</tspan> zairithm/journey.rs:3:1</text>
-  <text xml:space="preserve" class="t l l3" x="28" y="116"><tspan class="b">   |</tspan></text>
-  <text xml:space="preserve" class="t l l4" x="28" y="142"><tspan class="b"> 1 |</tspan> <tspan class="k">let</tspan> zaid = <tspan class="ty">Builder</tspan>::new().ai().blockchain().rust();</text>
-  <text xml:space="preserve" class="t l l5" x="28" y="168"><tspan class="b">   |</tspan>                                            <tspan class="c">^^^^^^ week 3 of 29</tspan></text>
-  <text xml:space="preserve" class="t l l6" x="28" y="194"><tspan class="b">   |</tspan></text>
-  <text xml:space="preserve" class="t l l7" x="28" y="220"><tspan class="b">   =</tspan> <tspan class="h">help</tspan>: now learning structs, enums and match</text>
-  <text xml:space="preserve" class="t l l8" x="28" y="246"><tspan class="b">   =</tspan> <tspan class="h">note</tspan>: 0 leetcode solved, 0 PRs merged upstream</text>
-  <text xml:space="preserve" class="t l l9" x="28" y="272"><tspan class="m">zaid@rust:~$</tspan> <tspan class="cur">█</tspan></text>
+  <text xml:space="preserve" class="t l l1" x="28" y="64"><tspan class="m">zaid@rust:~$</tspan> cargo run --release</text>
+  <text xml:space="preserve" class="t l l2" x="28" y="90"><tspan class="h">    Finished</tspan> `release` profile [optimized] target(s)</text>
+  <text xml:space="preserve" class="t l l3" x="28" y="116"><tspan class="h">     Running</tspan> `target/release/zaid`</text>
+  <text xml:space="preserve" class="t l l4" x="28" y="142"></text>
+  <text xml:space="preserve" class="t l l5 n" x="28" y="176"><tspan class="n">Mo Zaid</tspan>  <tspan class="c">Rust developer</tspan></text>
+  <text xml:space="preserve" class="t l l6" x="28" y="210"><tspan class="b">  backend   </tspan> tokio <tspan class="m">·</tspan> axum</text>
+  <text xml:space="preserve" class="t l l7" x="28" y="236"><tspan class="b">  on-chain  </tspan> solana <tspan class="m">·</tspan> anchor</text>
+  <text xml:space="preserve" class="t l l8" x="28" y="262"><tspan class="b">  also      </tspan> python <tspan class="m">·</tspan> pytorch <tspan class="m">·</tspan> solidity</text>
+  <text xml:space="preserve" class="t l l9" x="28" y="288"><tspan class="b">  now       </tspan> week 3 of 29: structs, enums and match</text>
+  <text xml:space="preserve" class="t l l10" x="28" y="314"><tspan class="m">zaid@rust:~$</tspan> <tspan class="cur">█</tspan></text>
 </svg>
