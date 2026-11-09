@@ -7,9 +7,9 @@
 $ cargo build --release -p zaid
    Compiling ai-ml   v1.0.0   python, pytorch, tensorflow, scikit-learn, pandas
    Compiling web3    v1.0.0   solidity, hardhat, ethers.js, ipfs
-   Compiling rust    v0.2.0   rust book, rustlings, tokio, axum, solana + anchor
+   Compiling rust    v0.3.0   rust book, rustlings, tokio, axum, solana + anchor
    Compiling dsa     v0.0.0   c++, leetcode
-    Building [=>                          ] 2/29  foundations: ownership and borrowing
+    Building [==>                         ] 3/29  foundations: structs, enums and match
     Finished leetcode 0 solved (0 easy, 0 medium, 0 hard), 0 PRs merged upstream
 ```
 <!--BUILD:END-->
@@ -24,7 +24,7 @@ $ cargo build --release -p zaid
 | 🎓 | **certchain** | Degree certificates stored on blockchain, checked with a QR scan, plus an AI check that flags edited certificates | ⏳ code coming soon |
 | 📄 | **metadata** | Pulls key details like names, rent and dates out of rental agreements, from Word files or scanned images | ⏳ code coming soon |
 | 🦀 | **rust-journey** | My Rust learning log: exercises, notes and mini projects, updated every week | 🔨 building now |
-| 📝 | **rust-todo-cli** | A terminal todo app that saves tasks to a JSON file | 🗓️ planned, week 3 |
+| 📝 | **rust-todo-cli** | A terminal todo app that saves tasks to a JSON file | 🔨 building now |
 | 🧹 | **folder-cleaner** | A command-line tool that sorts messy folders by file type | 🗓️ planned, week 7 |
 | ⚡ | **parallel-word-count** | Counts words across 1,000 files using every CPU core, with a speed comparison | 🗓️ planned, week 8 |
 | 💬 | **tokio-chat** | A chat server where many people can talk at once, built with async Rust | 🗓️ planned, week 9 |
@@ -76,5 +76,5 @@ _Nothing public yet. First Rust commits are on the way._
 [LinkedIn](https://linkedin.com/in/mo-zaid-6159bb361) · [LeetCode](https://leetcode.com/u/zairithm) · [Kaggle](https://www.kaggle.com/zairithm13) · [Email](mailto:newworldorderr07@gmail.com)
 
 <!--UPDATED:START-->
-<sub>This profile updates itself every morning. Last change: 02 Nov 2026.</sub>
+<sub>This profile updates itself every morning. Last change: 09 Nov 2026.</sub>
 <!--UPDATED:END-->
