@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 230" width="840" height="230" role="img" aria-label="Mo Zaid, Rust Developer from Aligarh, India. I build backend apps and Solana projects in Rust."><title>Mo Zaid, Rust Developer from Aligarh, India. I build backend apps and Solana projects in Rust.</title><style>
+  .bg{fill:#0E1013} .line{stroke:#24282E} .fg{fill:#ECEEF1} .mute{fill:#8B929B} .acc{fill:#F0663A}
+  .chip{fill:#171A1F;stroke:#2A2F36} .ring{stroke:#F0663A} .mono{fill:#1B1F25}
+  .c0{fill:#171A1F} .c1{fill:#5A2A1C} .c2{fill:#9A3F22} .c3{fill:#D2552C} .c4{fill:#FF8A5C}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif} .code{font-family:ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace}
+  @media (prefers-color-scheme: light){
+    .bg{fill:#FFFFFF} .line{stroke:#E3E6EA} .fg{fill:#14171A} .mute{fill:#5F6670} .acc{fill:#C8461D}
+    .chip{fill:#F5F6F8;stroke:#E1E4E8} .ring{stroke:#C8461D} .mono{fill:#F2F3F5}
+    .c0{fill:#EEF0F2} .c1{fill:#F9D3C3} .c2{fill:#F2A07E} .c3{fill:#E06A3E} .c4{fill:#B63E16}
+  }
+  .rise{opacity:0;animation:rise .6s ease-out forwards}
+  @keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.rise{animation:none;opacity:1}}
+</style><rect class="bg line" x="0.5" y="0.5" width="839" height="229" rx="12" stroke-width="1"/>
+  <text class="code rise" x="40" y="52" font-size="12" letter-spacing="2.5"><tspan class="acc">RUST DEVELOPER</tspan><tspan class="mute">  ·  ALIGARH, INDIA</tspan></text>
+  <text class="fg sans rise" x="38" y="106" font-size="46" font-weight="700" letter-spacing="-1" style="animation-delay:.1s">Mo Zaid</text>
+  <text class="mute sans rise" x="40" y="140" font-size="17" style="animation-delay:.2s">I build backend apps and Solana projects in Rust.</text>
+  <g class="rise" style="animation-delay:0.30s"><rect class="chip" x="40" y="166" width="53" height="28" rx="6"/><text class="fg code" x="51" y="184.5" font-size="13">Rust</text></g><g class="rise" style="animation-delay:0.35s"><rect class="chip" x="101" y="166" width="61" height="28" rx="6"/><text class="fg code" x="112" y="184.5" font-size="13">Tokio</text></g><g class="rise" style="animation-delay:0.40s"><rect class="chip" x="170" y="166" width="53" height="28" rx="6"/><text class="fg code" x="181" y="184.5" font-size="13">Axum</text></g><g class="rise" style="animation-delay:0.45s"><rect class="chip" x="231" y="166" width="69" height="28" rx="6"/><text class="fg code" x="242" y="184.5" font-size="13">Solana</text></g><g class="rise" style="animation-delay:0.50s"><rect class="chip" x="308" y="166" width="69" height="28" rx="6"/><text class="fg code" x="319" y="184.5" font-size="13">Anchor</text></g>
+  <g class="rise" style="animation-delay:.15s">
+    <circle cx="720" cy="115.0" r="70" fill="none" class="ring" stroke-width="2" stroke-dasharray="6 6" opacity=".55"/>
+    <circle class="mono" cx="720" cy="115.0" r="64"/><text class="fg sans" x="720" y="130.0" font-size="42" font-weight="600" text-anchor="middle" letter-spacing="1">MZ</text>
+  </g></svg>
