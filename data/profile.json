@@ -1,6 +1,6 @@
 {
  "calendar": {
-  "total": 19,
+  "total": 22,
   "weeks": [
    [
     {
@@ -1944,8 +1944,8 @@
     },
     {
      "date": "2026-11-11",
-     "n": 0,
-     "lvl": "NONE"
+     "n": 3,
+     "lvl": "SECOND_QUARTILE"
     }
    ]
   ]
