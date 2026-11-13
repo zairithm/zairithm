@@ -1,6 +1,6 @@
 {
  "calendar": {
-  "total": 92,
+  "total": 86,
   "weeks": [
    [
     {
@@ -1944,7 +1944,7 @@
     },
     {
      "date": "2026-11-11",
-     "n": 57,
+     "n": 16,
      "lvl": "FOURTH_QUARTILE"
     },
     {
@@ -1954,44 +1954,20 @@
     },
     {
      "date": "2026-11-13",
-     "n": 0,
-     "lvl": "NONE"
+     "n": 35,
+     "lvl": "FOURTH_QUARTILE"
     }
    ]
   ]
  },
  "repos": [
   {
-   "name": "anchor-escrow",
-   "url": "https://github.com/zairithm/anchor-escrow",
-   "desc": "Solana escrow program built with Anchor",
+   "name": "rust-journey",
+   "url": "https://github.com/zairithm/rust-journey",
+   "desc": "Exercises and notes from learning Rust, one crate per week",
    "lang": "Rust",
    "stars": 0,
-   "pushed": "2026-11-11T08:59:01Z"
-  },
-  {
-   "name": "rust-kv-store",
-   "url": "https://github.com/zairithm/rust-kv-store",
-   "desc": "Persistent key-value store written from scratch in Rust",
-   "lang": "Rust",
-   "stars": 0,
-   "pushed": "2026-11-11T08:58:57Z"
-  },
-  {
-   "name": "axum-notes-api",
-   "url": "https://github.com/zairithm/axum-notes-api",
-   "desc": "REST API for notes with authentication and PostgreSQL, built with Axum",
-   "lang": "Rust",
-   "stars": 0,
-   "pushed": "2026-11-11T08:58:52Z"
-  },
-  {
-   "name": "tokio-chat",
-   "url": "https://github.com/zairithm/tokio-chat",
-   "desc": "Multi-client async chat server over TCP, built with Tokio",
-   "lang": "Rust",
-   "stars": 0,
-   "pushed": "2026-11-11T08:58:47Z"
+   "pushed": "2026-11-13T15:32:21Z"
   },
   {
    "name": "rust-todo-cli",
@@ -1999,15 +1975,39 @@
    "desc": "Command-line task manager with JSON storage, built with clap and serde",
    "lang": "Rust",
    "stars": 0,
-   "pushed": "2026-11-11T08:58:43Z"
+   "pushed": "2026-11-13T15:31:58Z"
   },
   {
-   "name": "rust-journey",
-   "url": "https://github.com/zairithm/rust-journey",
-   "desc": "Exercises and notes from learning Rust, one crate per week",
+   "name": "tokio-chat",
+   "url": "https://github.com/zairithm/tokio-chat",
+   "desc": "Multi-client async chat server over TCP, built with Tokio",
    "lang": "Rust",
    "stars": 0,
-   "pushed": "2026-11-11T08:58:38Z"
+   "pushed": "2026-11-13T15:31:35Z"
+  },
+  {
+   "name": "axum-notes-api",
+   "url": "https://github.com/zairithm/axum-notes-api",
+   "desc": "REST API for notes with authentication and PostgreSQL, built with Axum",
+   "lang": "Rust",
+   "stars": 0,
+   "pushed": "2026-11-13T15:31:11Z"
+  },
+  {
+   "name": "anchor-escrow",
+   "url": "https://github.com/zairithm/anchor-escrow",
+   "desc": "Solana escrow program built with Anchor",
+   "lang": "Rust",
+   "stars": 0,
+   "pushed": "2026-11-13T15:30:47Z"
+  },
+  {
+   "name": "rust-kv-store",
+   "url": "https://github.com/zairithm/rust-kv-store",
+   "desc": "Persistent key-value store written from scratch in Rust",
+   "lang": "Rust",
+   "stars": 0,
+   "pushed": "2026-11-13T15:30:19Z"
   }
  ]
 }
