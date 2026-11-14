@@ -1,6 +1,6 @@
 {
  "calendar": {
-  "total": 86,
+  "total": 92,
   "weeks": [
    [
     {
@@ -1954,13 +1954,34 @@
     },
     {
      "date": "2026-11-13",
-     "n": 35,
+     "n": 39,
      "lvl": "FOURTH_QUARTILE"
+    },
+    {
+     "date": "2026-11-14",
+     "n": 2,
+     "lvl": "SECOND_QUARTILE"
     }
    ]
   ]
  },
  "repos": [
+  {
+   "name": "solana-pda-toolkit",
+   "url": "https://github.com/zairithm/solana-pda-toolkit",
+   "desc": "Derive Solana PDAs, convert keys and compute Anchor discriminators in the browser. Rust + WebAssembly.",
+   "lang": "Rust",
+   "stars": 0,
+   "pushed": "2026-11-14T06:10:15Z"
+  },
+  {
+   "name": "rust-kv-store",
+   "url": "https://github.com/zairithm/rust-kv-store",
+   "desc": "Persistent key-value store written from scratch in Rust",
+   "lang": "Rust",
+   "stars": 0,
+   "pushed": "2026-11-13T15:55:51Z"
+  },
   {
    "name": "rust-journey",
    "url": "https://github.com/zairithm/rust-journey",
@@ -2000,14 +2021,6 @@
    "lang": "Rust",
    "stars": 0,
    "pushed": "2026-11-13T15:30:47Z"
-  },
-  {
-   "name": "rust-kv-store",
-   "url": "https://github.com/zairithm/rust-kv-store",
-   "desc": "Persistent key-value store written from scratch in Rust",
-   "lang": "Rust",
-   "stars": 0,
-   "pushed": "2026-11-13T15:30:19Z"
   }
  ]
 }
